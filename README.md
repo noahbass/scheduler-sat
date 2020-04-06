@@ -1,5 +1,8 @@
 # scheduler-sat
 
+![CI Status](https://github.com/noahbass/scheduler-sat/workflows/ci/badge.svg)
+[![MIT license](https://img.shields.io/github/license/noahbass/scheduler-sat.svg)](http://opensource.org/licenses/MIT)
+
 *Work in progress*
 
 > Using a SAT solver to generate and prove correctness of schedules given a list of constraints
