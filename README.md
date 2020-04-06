@@ -1,6 +1,6 @@
 # scheduler-sat
 
-![CI Status](https://github.com/noahbass/scheduler-sat/workflows/ci/badge.svg)
+[![CI Status](https://github.com/noahbass/scheduler-sat/workflows/ci/badge.svg)](https://github.com/noahbass/scheduler-sat/actions?query=workflow%3Aci)
 [![MIT license](https://img.shields.io/github/license/noahbass/scheduler-sat.svg)](http://opensource.org/licenses/MIT)
 
 *Work in progress*
