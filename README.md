@@ -11,19 +11,21 @@
 
 Requirements:
 
-- Python 3
+- Python 3 (and pip 3)
 
 Clone and run tests:
 
 ```sh
 $ git clone git@github.com:noahbass/scheduler-sat.git
 $ cd scheduler-sat
+$ pip3 install -r requirements.txt
 $ python3 main.test.py -v
 ```
 
 ## Tests
 
 ```sh
+$ pip3 install -r requirements.txt
 $ python3 main.test.py -v
 ```
 
