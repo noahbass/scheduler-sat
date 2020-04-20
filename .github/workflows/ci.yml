@@ -21,4 +21,4 @@ jobs:
     - name: Install
       run: pip install -r requirements.txt
     - name: Test
-      run: python3 main.test.py -v
+      run: python3 main.test.py -v && python3 validator.test.py -v

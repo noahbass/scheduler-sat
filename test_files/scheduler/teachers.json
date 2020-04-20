@@ -1,0 +1,12 @@
+[
+    {
+        "teacherId": 1,
+        "classroomSize": 30,
+        "potentialClasses": ["ENGL104", "MATH101"]
+    },
+    {
+        "teacherId": 2,
+        "classroomSize": 30,
+        "potentialClasses": ["HIST101", "MATH101"]
+    }
+]

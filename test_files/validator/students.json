@@ -1,0 +1,116 @@
+[
+    {
+        "studentId": 1,
+        "period1": "MATH",
+        "period2": "ENGL",
+        "period3": "HIST"
+    },
+    {
+        "studentId": 2,
+        "period1": "MATH",
+        "period2": "HIST",
+        "period3": "CHEM"
+    },
+    {
+        "studentId": 3,
+        "period1": "ENGL",
+        "period2": "HIST",
+        "period3": "MATH"
+    },
+    {
+        "studentId": 4,
+        "period1": "CHEM",
+        "period2": "HIST",
+        "period3": "ENGL"
+    },
+    {
+        "studentId": 5,
+        "period1": "MATH",
+        "period2": "HIST",
+        "period3": "ENGL"
+    },
+    {
+        "studentId": 6,
+        "period1": "CHEM",
+        "period2": "ENGL",
+        "period3": "MATH"
+    },
+    {
+        "studentId": 7,
+        "period1": "MATH",
+        "period2": "ENGL",
+        "period3": "HIST"
+    },
+    {
+        "studentId": 8,
+        "period1": "MATH",
+        "period2": "ENGL",
+        "period3": "HIST"
+    },
+    {
+        "studentId": 9,
+        "period1": "MATH",
+        "period2": "ENGL",
+        "period3": "HIST"
+    },
+    {
+        "studentId": 10,
+        "period1": "MATH",
+        "period2": "ENGL",
+        "period3": "HIST"
+    },
+    {
+        "studentId": 11,
+        "period1": "HIST",
+        "period2": "CHEM",
+        "period3": "MATH"
+    },
+    {
+        "studentId": 12,
+        "period1": "MATH",
+        "period2": "CHEM",
+        "period3": "ENGL"
+    },
+    {
+        "studentId": 13,
+        "period1": "MATH",
+        "period2": "ENGL",
+        "period3": "HIST"
+    },
+    {
+        "studentId": 14,
+        "period1": "MATH",
+        "period2": "ENGL",
+        "period3": "HIST"
+    },
+    {
+        "studentId": 15,
+        "period1": "MATH",
+        "period2": "ENGL",
+        "period3": "HIST"
+    },
+    {
+        "studentId": 16,
+        "period1": "MATH",
+        "period2": "ENGL",
+        "period3": "HIST"
+    },
+    {
+        "studentId": 17,
+        "period1": "MATH",
+        "period2": "ENGL",
+        "period3": "HIST"
+    },
+    {
+        "studentId": 18,
+        "period1": "MATH",
+        "period2": "CHEM",
+        "period3": "HIST"
+    },
+    {
+        "studentId": 19,
+        "period1": "MATH",
+        "period2": "CHEM",
+        "period3": "HIST"
+    }
+]

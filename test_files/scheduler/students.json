@@ -1,0 +1,10 @@
+[
+    {
+        "studentId": 1,
+        "requiredClasses": ["ENGL104", "MATH101"]
+    },
+    {
+        "studentId": 2,
+        "requiredClasses": ["ENGL104", "HIST101"]
+    }
+]

@@ -1,6 +1,5 @@
 import unittest
 from main import cool_function, get_available_classes
-
 import json
 
 
@@ -10,12 +9,12 @@ class SchedulerSATTEsts(unittest.TestCase):
     #     self.assertEqual(result, 'something')
 
     def test_json_test(self):
-        with open('test_files/students.json') as students_file:
+        with open('test_files/scheduler/students.json') as students_file:
             students_json = json.load(students_file)
-        with open('test_files/teachers.json') as teachers_file:
+        with open('test_files/scheduler/teachers.json') as teachers_file:
             teachers_json = json.load(teachers_file)
 
-        periods_in_day = 1
+        periods_in_day = 2
         
         #print(students_json)
         #print(teachers_json)

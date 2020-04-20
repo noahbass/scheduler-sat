@@ -139,20 +139,3 @@ def get_available_classes(student_data, teacher_data):
         exit(1)
 
     return student_classes
-
-
-if __name__ == '__main__':
-    with open('test_files/students.json') as students_file:
-        students_json = json.load(students_file)
-    with open('test_files/teachers.json') as teachers_file:
-        teachers_json = json.load(teachers_file)
-
-    periods_in_day = 1
-    
-    #print(students_json)
-    #print(teachers_json)
-
-    # get_available_classes(students_json, teachers_json)
-
-    result = cool_function(periods_in_day, students_json, teachers_json)
-    print('Hello, world')

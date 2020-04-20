@@ -1,0 +1,51 @@
+[
+    {
+        "teacherId": 1,
+        "classroomSize": 5,
+        "period1": "MATH",
+        "period2": null,
+        "period3": "HIST"
+    },
+    {
+        "teacherId": 2,
+        "classroomSize": 5,
+        "period1": "HIST",
+        "period2": null,
+        "period3": "MATH"
+    },
+    {
+        "teacherId": 3,
+        "classroomSize": 5,
+        "period1": "ENGL",
+        "period2": null,
+        "period3": "HIST"
+    },
+    {
+        "teacherId": 3,
+        "classroomSize": 5,
+        "period1": null,
+        "period2": "ENGL",
+        "period3": "MATH"
+    },
+    {
+        "teacherId": 4,
+        "classroomSize": 5,
+        "period1": null,
+        "period2": "HIST",
+        "period3": "CHEM"
+    },
+    {
+        "teacherId": 5,
+        "classroomSize": 5,
+        "period1": null,
+        "period2": "CHEM",
+        "period3": "ENGL"
+    },
+    {
+        "teacherId": 6,
+        "classroomSize": 5,
+        "period1": "CHEM",
+        "period2": "HIST",
+        "period3": null
+    }
+]
