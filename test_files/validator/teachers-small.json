@@ -1,0 +1,16 @@
+[
+    {
+        "teacherId": 1,
+        "classroomSize": 5,
+        "period1": "MATH",
+        "period2": "ENGL",
+        "period3": null
+    },
+    {
+        "teacherId": 2,
+        "classroomSize": 5,
+        "period1": null,
+        "period2": "HIST",
+        "period3": "CHEM"
+    }
+]

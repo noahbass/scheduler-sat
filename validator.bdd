@@ -1,0 +1,77 @@
+c     variables, statements
+p bdd 24 30
+
+; Student 1 Configuration: MATH, ENGL, CHEM
+stu1_1_math
+not(stu1_1_engl)
+not(stu1_1_chem)
+not(stu1_1_hist)
+not(stu1_2_math)
+stu1_2_engl
+not(stu1_2_chem)
+not(stu1_2_hist)
+not(stu1_3_math)
+not(stu1_3_engl)
+stu1_3_chem
+not(stu1_3_hist)
+
+; Ensure that student 1's classes are unique
+; aka, a student cannot take the same class twice
+or(
+    and(stu1_1_math, not(stu1_2_math), not(stu1_3_math))
+    and(not(stu1_1_math), stu1_2_math, not(stu1_3_math))
+    and(not(stu1_1_math), not(stu1_2_math), stu1_3_math)
+)
+or(
+    and(stu1_1_engl, not(stu1_2_engl), not(stu1_3_engl))
+    and(not(stu1_1_engl), stu1_2_engl, not(stu1_3_engl))
+    and(not(stu1_1_engl), not(stu1_2_engl), stu1_3_engl)
+)
+or(
+    and(stu1_1_chem, not(stu1_2_chem), not(stu1_3_chem))
+    and(not(stu1_1_chem), stu1_2_chem, not(stu1_3_chem))
+    and(not(stu1_1_chem), not(stu1_2_chem), stu1_3_chem)
+)
+;or(
+;    and(stu1_1_hist, not(stu1_2_hist), not(stu1_3_hist))
+;    and(not(stu1_1_hist), stu1_2_hist, not(stu1_3_hist))
+;    and(not(stu1_1_hist), not(stu1_2_hist), stu1_3_hist)
+;)
+
+; Student 2 Configuration: MATH, HIST, CHEM
+stu2_1_math
+not(stu2_1_engl)
+not(stu2_1_chem)
+not(stu2_1_hist)
+not(stu2_2_math)
+not(stu2_2_engl)
+not(stu2_2_chem)
+stu2_2_hist
+not(stu2_3_math)
+not(stu2_3_engl)
+stu2_3_chem
+not(stu2_3_hist)
+
+; Ensure that student 2's classes are unique
+; aka, a student cannot take the same class twice
+or(
+    and(stu2_1_math, not(stu2_2_math), not(stu2_3_math))
+    and(not(stu2_1_math), stu2_2_math, not(stu2_3_math))
+    and(not(stu2_1_math), not(stu2_2_math), stu2_3_math)
+)
+;or(
+;    and(stu1_1_engl, not(stu1_2_engl), not(stu1_3_engl))
+;    and(not(stu1_1_engl), stu1_2_engl, not(stu1_3_engl))
+;    and(not(stu1_1_engl), not(stu1_2_engl), stu1_3_engl)
+;)
+or(
+    and(stu2_1_chem, not(stu2_2_chem), not(stu2_3_chem))
+    and(not(stu2_1_chem), stu2_2_chem, not(stu2_3_chem))
+    and(not(stu2_1_chem), not(stu2_2_chem), stu2_3_chem)
+)
+or(
+    and(stu2_1_hist, not(stu2_2_hist), not(stu2_3_hist))
+    and(not(stu2_1_hist), stu2_2_hist, not(stu2_3_hist))
+    and(not(stu2_1_hist), not(stu2_2_hist), stu2_3_hist)
+)
+;This is 

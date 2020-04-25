@@ -1,0 +1,14 @@
+[
+    {
+        "studentId": 1,
+        "period1": "MATH",
+        "period2": "ENGL",
+        "period3": "CHEM"
+    },
+    {
+        "studentId": 2,
+        "period1": "MATH",
+        "period2": "HIST",
+        "period3": "CHEM"
+    }
+]

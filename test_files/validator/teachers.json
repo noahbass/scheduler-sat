@@ -1,7 +1,7 @@
 [
     {
         "teacherId": 1,
-        "classroomSize": 5,
+        "classroomSize": 15,
         "period1": "MATH",
         "period2": null,
         "period3": "HIST"
@@ -22,7 +22,7 @@
     },
     {
         "teacherId": 3,
-        "classroomSize": 5,
+        "classroomSize": 11,
         "period1": null,
         "period2": "ENGL",
         "period3": "MATH"
