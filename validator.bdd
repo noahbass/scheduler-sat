@@ -1,5 +1,7 @@
 c     variables, statements
-p bdd 24 30
+p bdd 54 92
+
+; CONFIGURATION
 
 ; Student 1 Configuration: MATH, ENGL, CHEM
 stu1_1_math
@@ -14,6 +16,58 @@ not(stu1_3_math)
 not(stu1_3_engl)
 stu1_3_chem
 not(stu1_3_hist)
+
+; Student 2 Configuration: MATH, HIST, CHEM
+stu2_1_math
+not(stu2_1_engl)
+not(stu2_1_chem)
+not(stu2_1_hist)
+not(stu2_2_math)
+not(stu2_2_engl)
+not(stu2_2_chem)
+stu2_2_hist
+not(stu2_3_math)
+not(stu2_3_engl)
+stu2_3_chem
+not(stu2_3_hist)
+
+;; Teacher 1 Configuration: MATH, ENGL, FREE_PERIOD
+not(tea1_1_engl)
+tea1_1_math
+not(tea1_1_chem)
+not(tea1_1_hist)
+not(tea1_1_free)
+tea1_2_engl
+not(tea1_2_math)
+not(tea1_2_chem)
+not(tea1_2_hist)
+not(tea1_2_free)
+not(tea1_3_engl)
+not(tea1_3_math)
+not(tea1_3_chem)
+not(tea1_3_hist)
+tea1_3_free 
+
+;; Teacher 2 Configuration: FREE_PERIOD, HIST, CHEM
+not(tea2_1_engl)
+not(tea2_1_math)
+not(tea2_1_chem)
+not(tea2_1_hist)
+tea2_1_free
+not(tea2_2_engl)
+not(tea2_2_math)
+not(tea2_2_chem)
+tea2_2_hist
+not(tea2_2_free)
+not(tea2_3_engl)
+not(tea2_3_math)
+tea2_3_chem
+not(tea2_3_hist)
+not(tea2_3_free)
+
+
+
+; VALIDATION
 
 ; Ensure that student 1's classes are unique
 ; aka, a student cannot take the same class twice
@@ -38,19 +92,25 @@ or(
 ;    and(not(stu1_1_hist), not(stu1_2_hist), stu1_3_hist)
 ;)
 
-; Student 2 Configuration: MATH, HIST, CHEM
-stu2_1_math
-not(stu2_1_engl)
-not(stu2_1_chem)
-not(stu2_1_hist)
-not(stu2_2_math)
-not(stu2_2_engl)
-not(stu2_2_chem)
-stu2_2_hist
-not(stu2_3_math)
-not(stu2_3_engl)
-stu2_3_chem
-not(stu2_3_hist)
+; Ensure that student 1 is not taking more than one class in any period
+or(
+    and(stu1_1_math, not(stu1_1_engl), not(stu1_1_chem), not(stu1_1_hist))
+    and(not(stu1_1_math), stu1_1_engl, not(stu1_1_chem), not(stu1_1_hist))
+    and(not(stu1_1_math), not(stu1_1_engl), stu1_1_chem, not(stu1_1_hist))
+    and(not(stu1_1_math), not(stu1_1_engl), not(stu1_1_chem), stu1_1_hist)
+)
+or(
+    and(stu1_2_math, not(stu1_2_engl), not(stu1_2_chem), not(stu1_2_hist))
+    and(not(stu1_2_math), stu1_2_engl, not(stu1_2_chem), not(stu1_2_hist))
+    and(not(stu1_2_math), not(stu1_2_engl), stu1_2_chem, not(stu1_2_hist))
+    and(not(stu1_2_math), not(stu1_2_engl), not(stu1_2_chem), stu1_2_hist)
+)
+or(
+    and(stu1_3_math, not(stu1_3_engl), not(stu1_3_chem), not(stu1_3_hist))
+    and(not(stu1_3_math), stu1_3_engl, not(stu1_3_chem), not(stu1_3_hist))
+    and(not(stu1_3_math), not(stu1_3_engl), stu1_3_chem, not(stu1_3_hist))
+    and(not(stu1_3_math), not(stu1_3_engl), not(stu1_3_chem), stu1_3_hist)
+)
 
 ; Ensure that student 2's classes are unique
 ; aka, a student cannot take the same class twice
@@ -74,4 +134,65 @@ or(
     and(not(stu2_1_hist), stu2_2_hist, not(stu2_3_hist))
     and(not(stu2_1_hist), not(stu2_2_hist), stu2_3_hist)
 )
-;This is 
+
+; Ensure that student 2 is not taking more than one class in any period
+or(
+    and(stu2_1_math, not(stu2_1_engl), not(stu2_1_chem), not(stu2_1_hist))
+    and(not(stu2_1_math), stu2_1_engl, not(stu2_1_chem), not(stu2_1_hist))
+    and(not(stu2_1_math), not(stu2_1_engl), stu2_1_chem, not(stu2_1_hist))
+    and(not(stu2_1_math), not(stu2_1_engl), not(stu2_1_chem), stu2_1_hist)
+)
+or(
+    and(stu2_2_math, not(stu2_2_engl), not(stu2_2_chem), not(stu2_2_hist))
+    and(not(stu2_2_math), stu2_2_engl, not(stu2_2_chem), not(stu2_2_hist))
+    and(not(stu2_2_math), not(stu2_2_engl), stu2_2_chem, not(stu2_2_hist))
+    and(not(stu2_2_math), not(stu2_2_engl), not(stu2_2_chem), stu2_2_hist)
+)
+or(
+    and(stu2_3_math, not(stu2_3_engl), not(stu2_3_chem), not(stu2_3_hist))
+    and(not(stu2_3_math), stu2_3_engl, not(stu2_3_chem), not(stu2_3_hist))
+    and(not(stu2_3_math), not(stu2_3_engl), stu2_3_chem, not(stu2_3_hist))
+    and(not(stu2_3_math), not(stu2_3_engl), not(stu2_3_chem), stu2_3_hist)
+)
+
+; Ensure that Teacher 1 has at least 1 free period
+or(
+    and(tea1_1_free, not(tea1_2_free), not(tea1_3_free))
+    and(not(tea1_1_free), tea1_2_free, not(tea1_3_free))
+    and(not(tea1_1_free), not(tea1_2_free), tea1_3_free)
+)
+
+; Ensure that Teacher 1 has at least 1 free period
+or(
+    and(tea2_1_free, not(tea2_2_free), not(tea2_3_free)),
+    and(not(tea2_1_free), tea2_2_free, not(tea2_3_free)),
+    and(not(tea2_1_free), not(tea2_2_free), tea2_3_free)
+)
+
+; Ensure that student 1's classes are offered by at least 1 teacher
+imp(stu1_1_math, or(tea1_1_math, tea2_1_math))
+imp(stu1_1_engl, or(tea1_1_engl, tea2_1_engl))
+imp(stu1_1_chem, or(tea1_1_chem, tea2_1_chem)) ; 71
+imp(stu1_1_hist, or(tea1_1_hist, tea2_1_hist))
+imp(stu1_2_math, or(tea1_2_math, tea2_2_math))
+imp(stu1_2_engl, or(tea1_2_engl, tea2_2_engl))
+imp(stu1_2_chem, or(tea1_2_chem, tea2_2_chem))
+imp(stu1_2_hist, or(tea1_2_hist, tea2_2_hist))
+imp(stu1_3_math, or(tea1_3_math, tea2_3_math))
+imp(stu1_3_engl, or(tea1_3_engl, tea2_3_engl))
+imp(stu1_3_chem, or(tea1_3_chem, tea2_3_chem))
+imp(stu1_3_hist, or(tea1_3_hist, tea2_3_hist))
+
+; Ensure that student 2's classes are offered by at least 1 teacher
+imp(stu2_1_math, or(tea1_1_math, tea2_1_math))
+imp(stu2_1_engl, or(tea1_1_engl, tea2_1_engl))
+imp(stu2_1_chem, or(tea1_1_chem, tea2_1_chem))
+imp(stu2_1_hist, or(tea1_1_hist, tea2_1_hist))
+imp(stu2_2_math, or(tea1_2_math, tea2_2_math))
+imp(stu2_2_engl, or(tea1_2_engl, tea2_2_engl))
+imp(stu2_2_chem, or(tea1_2_chem, tea2_2_chem))
+imp(stu2_2_hist, or(tea1_2_hist, tea2_2_hist))
+imp(stu2_3_math, or(tea1_3_math, tea2_3_math))
+imp(stu2_3_engl, or(tea1_3_engl, tea2_3_engl))
+imp(stu2_3_chem, or(tea1_3_chem, tea2_3_chem))
+imp(stu2_3_hist, or(tea1_3_hist, tea2_3_hist))

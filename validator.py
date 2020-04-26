@@ -38,13 +38,20 @@ def validate(students_json, teachers_json, number_periods):
     # Validate that there are enough seats for each student
     v6 = validate_seats_for_students(students_df, teachers_df)
 
+    print(v1, v1 == [])
+    print(v2, v2 == [])
+    print(v3, v3 == [])
+    print(v4, v4 == [])
+    print(v5, v5 == [])
+    print(v6, v6 == True)
+
     # check if there were no errors
     return v1 == [] and \
            v2 == [] and \
            v3 == [] and \
            v4 == [] and \
            v5 == [] and \
-           v6 == []
+           v6 == True
 
 
 # Helper function: Take a function and apply it to each row
