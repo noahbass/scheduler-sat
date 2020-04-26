@@ -36,7 +36,7 @@ Clone and run:
 ```sh
 $ git clone git@github.com:noahbass/scheduler-sat.git
 $ cd scheduler-sat
-$ sbsat validator.bdd
+$ sbsat validator.bdd # or use ./sbsat.run validator.bdd
 # Reading File validator.bdd  ....
 # Reading ITE ... Done
 # Preprocessing .... Done                            

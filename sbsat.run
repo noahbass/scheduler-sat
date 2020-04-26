@@ -1,2 +1,2 @@
 #!/bin/bash
-~/Projects/sbsat-2.7b/src/sbsat --max-solutions 1 -R c $1
+sbsat --max-solutions 1 -R c $1
